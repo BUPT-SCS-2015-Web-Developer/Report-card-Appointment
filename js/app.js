@@ -5,7 +5,9 @@ $(document).ready(function() {
         format: 'yyyy-mm-dd'
     });
 
-    $.getJSON("API/jumptest.php", function(data) {
-
+    $.getJSON("API/yiban/getAuthState.php", function(data) {
+        if(data.result != 0) {
+            location.href='http://f.yiban.cn/iapp86859'
+        }
     });
 });
