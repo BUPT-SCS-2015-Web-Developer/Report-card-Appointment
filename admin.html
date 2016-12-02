@@ -4,7 +4,11 @@
 <meta charset="UTF-8">
 <title>查看预约信息</title>
 <link href="css/materialize.css" rel="stylesheet" type="text/css">
-
+<style type="text/css">
+.num-in-p {
+    font-size: xx-large;
+}
+</style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
@@ -13,28 +17,96 @@
     <nav>
         <div class="nav-wrapper"> <a href="#" class="brand-logo center">经管成绩单预约助手</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">预约</a></li>
-                <li><a href="badges.html">查看预约信息</a></li>
+                <li><a href="index.html">预约</a></li>
+                <li><a href="admin.html">管理员</a></li>
             </ul>
         </div>
     </nav>
 </header>
 <main class="container">
-    <div class="row">
-        <table width="200" border="1" class="col s12 striped highlight">
-            <thead>
-                <tr>
-                    <th data-field="name">姓名</th>
-                    <th data-field="ID">学号</th>
-                    <th data-field="class">班级</th>
-                    <th data-field="field">专业</th>
-                    <th data-field="grade">年级</th>
-                    <th data-field="time">预约时间</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+    <div class="row" id="login-card">
+        <div class="col s12 m6 offset-m3">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">请登陆</span>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="ID" type="text" class="validate" required>
+                            <label for="ID">学工号</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="pwd" type="password" class="validate" required>
+                            <label for="pwd">密码</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <a href="#" id="login">登陆</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </br>
+    <div class="row" id="data-field" hidden>
+        <div class="col s12">
+        <ul class="tabs">
+            <li class="tab col s3"><a class="active" href="#today">今天</a></li>
+            <li class="tab col s3"><a href="#future">将来</a></li>
+            <li class="tab col s3"><a href="#history">历史记录</a></li>
+        </ul>
+        </div>
+        <div id="today" class="col s12">
+            <p>今天有<span class="num-in-p">0</span>人次</p>
+            <table width="200" border="1" class="col s12 striped highlight">
+                <thead>
+                    <tr>
+                        <th data-field="name">姓名</th>
+                        <th data-field="ID">学号</th>
+                        <th data-field="class">班级</th>
+                        <th data-field="field">专业</th>
+                        <th data-field="grade">年级</th>
+                        <th data-field="time">预约时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div id="future" class="col s12">
+            <p>将来有<span class="num-in-p">0</span>人次</p>
+            <table width="200" border="1" class="col s12 striped highlight">
+                <thead>
+                    <tr>
+                        <th data-field="name">姓名</th>
+                        <th data-field="ID">学号</th>
+                        <th data-field="class">班级</th>
+                        <th data-field="field">专业</th>
+                        <th data-field="grade">年级</th>
+                        <th data-field="time">预约时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div id="history" class="col s12">
+            <p>共有<span class="num-in-p">0</span>人次</p>
+            <table width="200" border="1" class="col s12 striped highlight">
+                <thead>
+                    <tr>
+                        <th data-field="name">姓名</th>
+                        <th data-field="ID">学号</th>
+                        <th data-field="class">班级</th>
+                        <th data-field="field">专业</th>
+                        <th data-field="grade">年级</th>
+                        <th data-field="time">预约时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        
     </div>
 </main>
 <footer>
