@@ -29,33 +29,33 @@
                     <div class="card-title">预约打印成绩单</div>
                     <div class="row">
                         <div class="input-field col m6 s12">
-                            <input id="name" type="text" class="validate">
+                            <input id="name" type="text" class="validate" required">
                             <label for="name">姓名</label>
                         </div>
                         <div class="input-field col m6 s12">
-                            <input id="ID" type="text" class="validate">
+                            <input id="ID" type="text" class="validate" required pattern="\d{10}">
                             <label for="ID">学号</label>
                         </div>
                         <div class="input-field col m6 s12">
-                            <input id="class" type="text" class="validate">
+                            <input id="class" type="text" class="validate" required pattern="\d{10}">
                             <label for="class">班级</label>
                         </div>
                         <div class="input-field col m6 s12">
-                            <input id="field" type="text" class="validate">
+                            <input id="field" type="text" class="validate" required">
                             <label for="field">专业</label>
                         </div>
                         <div class="input-field col m6 s12">
-                            <input id="grade" type="text" class="validate">
+                            <input id="grade" type="text" class="validate" required pattern="\d{4}">
                             <label for="grade">年级</label>
                         </div>
                         <div class="input-field col m6 s12">
                             <input id="time" type="text" class="datepicker" readonly>
-                            <label for="time">预约时间</label>
+                            <label for="time">预约日期</label>
                         </div>
                     </div>
                 </div>
                 <div class="card-action">
-                    <a href="#">预约</a>
+                    <a href="#" id="make-appointment">预约</a>
                 </div>
             </div>
         </div>
