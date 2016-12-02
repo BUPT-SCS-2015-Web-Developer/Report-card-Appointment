@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>经管成绩单预约助手</title>
+<link href="css/materialize.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="nav-wrapper"> 
+            <a href="#" class="brand-logo center">经管成绩单预约助手</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">预约</a></li>
+                <li><a href="badges.html">查看预约信息</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="container">
+    <div class="row">
+        <div class="col s12 m6 offset-m3">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-title">预约打印成绩单</div>
+                    <div class="row">
+                        <div class="input-field col m6 s12">
+                            <input id="name" type="text" class="validate">
+                            <label for="name">姓名</label>
+                        </div>
+                        <div class="input-field col m6 s12">
+                            <input id="ID" type="text" class="validate">
+                            <label for="ID">学号</label>
+                        </div>
+                        <div class="input-field col m6 s12">
+                            <input id="class" type="text" class="validate">
+                            <label for="class">班级</label>
+                        </div>
+                        <div class="input-field col m6 s12">
+                            <input id="field" type="text" class="validate">
+                            <label for="field">专业</label>
+                        </div>
+                        <div class="input-field col m6 s12">
+                            <input id="grade" type="text" class="validate">
+                            <label for="grade">年级</label>
+                        </div>
+                        <div class="input-field col m6 s12">
+                            <input id="time" type="text" class="datepicker" readonly>
+                            <label for="time">预约时间</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <a href="#">预约</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</main>
+<footer>
+    <div class="footer-copyright">
+        <div class="container">Copyright© 北邮易班学生发展中心 BUPTYiban</div>
+    </div>
+</footer>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
